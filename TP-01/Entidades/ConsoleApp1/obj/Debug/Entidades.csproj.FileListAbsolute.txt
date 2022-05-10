@@ -1,0 +1,28 @@
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.MiCalculadora.resources
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\tp_laboratorio_2\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\tp_laboratorio_2\TP_1\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.MiCalculadora.resources
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.SuggestedBindingRedirects.cache
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.MiCalculadora.resources
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Stabler\Desktop\Calculadora - WindowsForms, polimorfismo\Entidades\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
