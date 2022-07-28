@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,27 +14,40 @@ namespace AlbornozSantiago
 {
     public partial class FrmInforme : Form
     {
-        private static Serializador<List<Venta>> serializador;
-        private static string path;
+        private static string rutaBase;
         private List<Venta> ventas;
+        private static Serializador<Venta> serializador;
+        char separador = Path.DirectorySeparatorChar;
 
-        
+
         public FrmInforme()
         {
             InitializeComponent();
-            serializador = new Serializador<List<Venta>>();
-            path = $"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}";
-
         }
 
+        // INICIALIZA EL SERIALIZADOR Y EL FRM DE INFORME
+        static FrmInforme()
+        {
+            serializador = new Serializador<Venta>();
+            char separador = Path.DirectorySeparatorChar;
+            rutaBase = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}{separador}Albornoz_Santiago{separador}Ventas{separador}";
+            Directory.CreateDirectory(rutaBase);
+        }
+
+        // EXPORTA EL INFORME DE UN EMPLEADO Y LA VENTA REALIZADA EN UN ARCHIVO
         private void btnExportarInforme_Click(object sender, EventArgs e)
         {
             try
             {
-                serializador.SerializarJsonYGuardar($"{path}.txt", Ventas);                
+                
+                foreach(Venta venta in Ventas)
+                {
+                    serializador.SerializarJsonYGuardar($"{rutaBase}{venta.empleado.Nombre}.txt", venta);
+                }
+
                 this.Close();
             }
-            catch(ErrorEnArchivosException ex)
+            catch (ErrorEnArchivosException ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -49,7 +63,7 @@ namespace AlbornozSantiago
 
         private void FrmInforme_Load(object sender, EventArgs e)
         {
-            foreach(Venta aux in Ventas)
+            foreach (Venta aux in Ventas)
             {
                 this.rchInforme.Text = aux.ToString();
             }
@@ -60,6 +74,6 @@ namespace AlbornozSantiago
             get { return this.ventas; }
             set { this.ventas = value; }
         }
-      
+
     }
 }

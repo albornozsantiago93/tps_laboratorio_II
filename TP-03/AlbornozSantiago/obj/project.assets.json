@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stabler\\Desktop\\MASTER\\TP3\\AlbornozSantiago\\AlbornozSantiago.csproj",
+      "projectUniqueName": "C:\\Users\\Stabler\\Documents\\albornoz.santiago.2C\\TP-03\\AlbornozSantiago\\AlbornozSantiago.csproj",
       "projectName": "AlbornozSantiago",
-      "projectPath": "C:\\Users\\Stabler\\Desktop\\MASTER\\TP3\\AlbornozSantiago\\AlbornozSantiago.csproj",
+      "projectPath": "C:\\Users\\Stabler\\Documents\\albornoz.santiago.2C\\TP-03\\AlbornozSantiago\\AlbornozSantiago.csproj",
       "packagesPath": "C:\\Users\\Stabler\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stabler\\Desktop\\MASTER\\TP3\\AlbornozSantiago\\obj\\",
+      "outputPath": "C:\\Users\\Stabler\\Documents\\albornoz.santiago.2C\\TP-03\\AlbornozSantiago\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Stabler\\Desktop\\MASTER\\TP3\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Stabler\\Desktop\\MASTER\\TP3\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Stabler\\Documents\\albornoz.santiago.2C\\TP-03\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Stabler\\Documents\\albornoz.santiago.2C\\TP-03\\Entidades\\Entidades.csproj"
             }
           }
         }
