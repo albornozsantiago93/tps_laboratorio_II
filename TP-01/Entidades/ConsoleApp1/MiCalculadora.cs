@@ -21,10 +21,11 @@ namespace ConsoleApp1
             double retorno = 0;
             Operando operando1 = new Operando(numero1);
             Operando operando2 = new Operando(numero2);
+            string operando = this.cmbOperador.Text;
 
-            if (operando1 != null && operando2 != null )
+            if (operando1 != null && operando2 != null && operando != string.Empty)
             {
-                retorno = Calculadora.Operar(operando1, operando2, operador.ToCharArray()[0]);
+                retorno = Calculadora.Operar(operando1, operando2, operando[0]);
             }
             else
             {
@@ -36,7 +37,7 @@ namespace ConsoleApp1
 
         public void btnOperar_Click(object sender, EventArgs e)
         {
-            if(this.txtNumero1.Text != String.Empty && this.txtNumero2.Text != String.Empty)
+            if(this.txtNumero1.Text != string.Empty && this.txtNumero2.Text != string.Empty && this.cmbOperador.Text != string.Empty)
             {
                 this.CargarOperaciones();            
             }
@@ -54,7 +55,6 @@ namespace ConsoleApp1
 
         private void CargarOperaciones()
         {
-
             string numero1 = this.txtNumero1.Text.Replace(".", ",");
             string numero2 = this.txtNumero2.Text.Replace(".", ",");
             string operador = this.cmbOperador.Text;
@@ -74,9 +74,13 @@ namespace ConsoleApp1
             this.lblResultado.Text = resultadoAMostrar;
             this.lstOperaciones.Items.Add($"{numero1AMostrar} {operadorAMostrar} {numero2AMostrar} = {resultadoAMostrar}");
             
-            
         }
 
+        /// <summary>
+        /// El botón btnCerrar deberá cerrar el formulario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -86,7 +90,7 @@ namespace ConsoleApp1
             this.txtNumero1.Text = "";
             this.txtNumero2.Text = "";
             this.lblResultado.Text = "";
-            this.cmbOperador.Text = "";
+            this.cmbOperador.SelectedItem = null;
         }
 
 
@@ -95,6 +99,11 @@ namespace ConsoleApp1
             this.Limpiar();
         }
 
+        /// <summary>
+        /// El evento click del botón btnConvertirABinario convertirá el resultado, de existir, a binario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             string retorno = this.lblResultado.Text;
@@ -103,19 +112,24 @@ namespace ConsoleApp1
             {
                 Operando operando = new Operando(retorno);
                 string binario = operando.DecimalBinario(retorno);
-                if (binario.ToLower() == "valor inválido")
+                if (binario.ToLower() == "valor inválido" )
                 {
                     binario = "Inválido";
                 }
                 this.lblResultado.Text = binario;
+
             }
             else
             {
                 MessageBox.Show("No se puede convertir a binario");
             }
         }
-        
 
+        /// <summary>
+        /// El evento click del botón btnConvertirADecimal convertirá el resultado, de existir y ser binario, a decimal.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             string retorno = this.lblResultado.Text;

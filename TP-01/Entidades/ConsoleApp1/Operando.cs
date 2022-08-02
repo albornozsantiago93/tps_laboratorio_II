@@ -22,7 +22,7 @@ namespace ConsoleApp1
 
         public Operando(string numero)
         {
-            this.numero = double.Parse(numero);
+            this.Numero = numero;
         }
 
         #region Sobrecarga operadores
@@ -65,6 +65,7 @@ namespace ConsoleApp1
         private double ValidarOperando(string num)
         {
             double retorno;
+
             bool isNumeric = double.TryParse(num, out double numero);
             if (isNumeric)
             {
@@ -137,9 +138,13 @@ namespace ConsoleApp1
         /// <returns></returns>
         public string DecimalBinario(double numero)
         {
-            string retorno;
-            int parteEnteraAbsoluta = Math.Abs((int)numero);
-            retorno = Convert.ToString(parteEnteraAbsoluta, 2);
+            string retorno = "Valor inválido";
+
+            if(numero < 11111111)
+            {
+                int parteEnteraAbsoluta = Math.Abs((int)numero);
+                retorno = Convert.ToString(parteEnteraAbsoluta, 2);
+            }
             return retorno;
         }
 
