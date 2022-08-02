@@ -73,7 +73,23 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
-            return v1.chasis == v2.chasis;
+            bool retorno = false;
+
+            if (((object)v1) == null && ((object)v2) == null)
+            {
+                retorno = true;
+            }
+            else
+            {
+                if (((object)v1) != null && ((object)v2) != null)
+                {
+                    if (v1.chasis == v2.chasis)
+                    {
+                        retorno = true;
+                    }
+                }
+            }
+            return retorno;
         }
         /// <summary>
         /// Dos vehiculos son distintos si su chasis es distinto

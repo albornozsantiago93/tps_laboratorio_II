@@ -35,7 +35,7 @@ namespace Entidades
         #endregion
 
         #region "Sobrecargas"
-        public string ToString()
+        public override string ToString()
         {
             return Listar(this, ETipo.Todos);
         }
@@ -82,16 +82,18 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller.vehiculos)
+            if (taller.vehiculos.Count < taller.espacioDisponible)
             {
-                if (v == vehiculo)
-                    return taller;
+                foreach (Vehiculo v in taller.vehiculos)
+                {
+                    if (v.Equals(vehiculo))
+                    {
+                        return taller;
+                    }
+                }
+                taller.vehiculos.Add(vehiculo);
             }
 
-            if(taller.vehiculos.Count < taller.espacioDisponible)
-            {
-                taller.vehiculos.Add(vehiculo);
-            }            
             return taller;
         }
         /// <summary>
